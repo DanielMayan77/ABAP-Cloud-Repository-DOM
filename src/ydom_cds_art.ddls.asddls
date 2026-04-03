@@ -3,9 +3,11 @@
 @AbapCatalog.preserveKey: true
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Vista de articulos de Arte'
-@Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
 define view YDOM_CDS_ART as select from ydom_tab_art
 {
+    
+    key client as Client,
     key id_art as IdArt,
     descr as Descr,
     desc2 as Desc2,
