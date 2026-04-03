@@ -1,0 +1,4 @@
+@EndUserText.label: 'Exponer CDS'
+define service YDOM_SD_ART {
+  expose YDOM_CDS_ART;
+}
